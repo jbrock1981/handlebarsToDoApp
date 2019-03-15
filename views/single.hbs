@@ -1,0 +1,17 @@
+<div class="card">
+
+    <h5 class="card-header">{{title}} <span class="badge badge-secondary">{{priority}}</span></h5>
+    <div class="card-body">
+        <p class="card-text">{{description}}</p>
+    </div>
+    <form class="right" action="/todo/{{id}}?_method=DELETE" method="post" style="">
+        <button type="submit" class="right btn btn-danger">Delete</button>
+    </form>
+
+
+
+    <div class="card-footer text-muted">{{date}}</div>
+    <a href="/todo/{{id}}/edit" class="btn btn-warning">Edit</a>
+    <a href="/todo" class="btn btn-success">Home</a>
+
+</div>
